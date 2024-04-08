@@ -1,0 +1,50 @@
+@font-face {
+    font-family: Copperplate;
+    src: url("./fonts/Copperplate\ Light.ttf");
+}
+body {
+    margin: 0;
+    position: relative;
+    font-family: Copperplate;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem
+}
+
+.background {
+    background-image: url("./images/earth.jpg ");
+
+    background-attachment: fixed;
+    background-position-y: 80px;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo { height:150px}
+
+.project-outer {
+    padding: 50px 50px 50px 0px;
+}
+
+.project-inner {
+    background-color: rgba(255, 255, 255, 0.639);
+    width: fit-content;
+    padding: 20px 20px 20px 5px;
+}
+
+.quote-box {
+    background-color: black;
+    color: white;
+    padding: 24px;
+    text-align: center;
+    height: 3000px
+}
