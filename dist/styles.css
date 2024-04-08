@@ -71,17 +71,57 @@ header {
     text-align: center;
 }
 
-.carousel-outer {
+.nebula-outer {
     background-image: url('./images/nebula.jpg');
-    height: 370px;
+    height: 100%;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-.carousel-inner {
+.nebula-inner {
     background-color: rgba(0, 0, 0, 0.446);
-    flex:1;
+    width: 90%;
     height: 250px;
+    display: grid;
+    place-content: center;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: 1fr 50px;
+    place-items: center;
+}
+
+.carousel {
+    background-color: white;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    width: 250px;
+    display: flex;
+    scroll-behavior: smooth;
+    overflow: hidden;
+    position: relative;
+}
+.carousel-img {
+    width: 250px;
+    object-fit: cover;
+}
+
+.carousel-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    grid-column: 2/3;
+}
+.carousel-buttons * {
+    flex: 1;
+}
+
+.left-button {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.right-button {
+    grid-column: 3/4;
+    grid-row: 1/2;
 }
 
 footer {

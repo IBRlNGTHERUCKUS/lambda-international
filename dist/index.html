@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="./main.js"></script>
+    <script src="./main.js" defer></script>
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
@@ -21,16 +21,24 @@
         <h2 class="quote">There are no passengers on spaceship Earth. We are all crew</h2>
         <h2>-Marshall McLuman</h2>
     </section>
-    <section class="carousel-outer">
-        <div class="carousel-inner">
-            <img src="" alt="" class="carousel-img">
-            <img src="" alt="" class="carousel-img">
-            <img src="" alt="" class="carousel-img">
-            <img src="" alt="" class="carousel-img">
-            <img src="" alt="" class="carousel-img">
+    <section class="nebula-outer">
+        <div class="nebula-inner">
+            <input class="icon left-button" type="image" src="./images/chevron_left_outline_icon.svg" alt="">
+            <div class="carousel">
+                <img src="./images/crew.jpg" alt="" class="carousel-img">
+                <img src="./images/earth.jpg" alt="" class="carousel-img">
+                <img src="./images/landing.webp" alt="" class="carousel-img">
+                <img src="./images/launch.webp" alt="" class="carousel-img">
+                <img src="" alt="" class="carousel-img">
+            </div>
+            <div class="carousel-buttons">
+                <input type="button" value="" class="bar"><input type="button" value="" class="bar"><input type="button" value="" class="bar"><input type="button" value="" class="bar"><input type="button" value="" class="bar">
+            </div>
+            <input class="icon right-button" type="image" src="./images/chevron_outline_right_icon.svg" alt="">
         </div>
     </section>
     <footer>
+
         <div class="bio">
             <h2>Lambda International Asteroid Research</h2>
             <p>Lambda International is committed to tracking and monitoring all Near Earth Objects (NEOs) posing a threat to the planet Earth. </p>
