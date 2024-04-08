@@ -1,16 +1,30 @@
 @font-face {
-    font-family: Copperplate;
-    src: url("./fonts/Copperplate\ Light.ttf");
+    font-family: CopperplateH;
+    src: url("./fonts/OPTICopperplate-Heavy.otf");
+}
+@font-face {
+    font-family: CopperplateL;
+    src: url("./fonts/OPTICopperplate-Light.otf");
 }
 body {
     margin: 0;
     position: relative;
-    font-family: Copperplate;
+    font-family: CopperplateL;
 }
 
 h1 {
     margin: 0;
-    font-size: 2.5rem
+    font-size: 2rem;
+    font-family: CopperplateH;
+}
+
+p, a {
+    font-size: 1rem;
+    color: rgb(203, 203, 203);
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
 }
 
 .background {
@@ -41,10 +55,54 @@ header {
     padding: 20px 20px 20px 5px;
 }
 
+.learn-more {
+    border: none;
+    background: none;
+    /* text-decoration: underline; */
+    font-size: 2rem;
+    font-family: CopperplateL;
+    border-bottom: double black 6px;
+}
+
 .quote-box {
     background-color: black;
     color: white;
     padding: 24px;
     text-align: center;
-    height: 3000px
+}
+
+.carousel-outer {
+    background-image: url('./images/nebula.jpg');
+    height: 370px;
+    display: flex;
+    align-items: center;
+}
+
+.carousel-inner {
+    background-color: rgba(0, 0, 0, 0.446);
+    flex:1;
+    height: 250px;
+}
+
+footer {
+    display: flex;
+    background-color: black;
+    color: white;
+    padding: 24px;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.bio, .contact {
+    flex:1;
+    max-width: 380px;
+}
+
+.icon {
+    width: 50px;
+}
+
+li {
+    list-style: none;
 }
