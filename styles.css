@@ -50,14 +50,17 @@ header {
 }
 
 .project-inner {
-    background-color: rgba(255, 255, 255, 0.639);
+    background-color: rgba(255, 255, 255, 0.65);
+    color: black;
     width: fit-content;
     padding: 20px 20px 20px 5px;
     transition: height smooth 2s;
 }
 
-.project-inner:active {
-    height: 800px;
+.project-inner p {
+    color: black;
+    margin: 0px;
+    overflow: clip;
 }
 
 .learn-more {
@@ -65,6 +68,7 @@ header {
     background: none;
     /* text-decoration: underline; */
     font-size: 2rem;
+    color: black;
     font-family: CopperplateL;
     border-bottom: double black 6px;
 }
@@ -163,4 +167,46 @@ footer {
 
 li {
     list-style: none;
+}
+
+.hidden {
+    display: none;
+}
+
+/************************ Animations ********************************/
+@keyframes towhite {
+    from {}
+    to {background-color: rgba(255, 255, 255, 0.9);}
+}
+@keyframes toopaque {
+    from {background-color: rgba(255, 255, 255, 0.9);}
+    to {background-color: rgba(255, 255, 255, 0.65);}
+} 
+@keyframes shrinkvertical {
+    from {
+        max-height: 1000px;
+    }
+    to {
+        max-height: 0px;
+    }
+}
+@keyframes growvertical {
+    from {
+        max-height: 0px;
+    }
+    to {
+        max-height: 1000px;
+    }
+}
+@keyframes shrinkvertical {
+    from {
+        max-height: 300px;
+    }
+    to {
+        max-height: 0px;
+    }
+}
+    
+.project-opp {
+    animation: towhite 2s forwards;
 }
