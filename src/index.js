@@ -17,13 +17,12 @@ function handleProject() {
     if (projectPara.classList.contains('hidden')) {
         projectPara.classList.toggle('hidden');
         //Add grow and whiten animations
-        projectPara.style.animation='growvertical 3s forwards'
-        projectInnerEl.style.animation='towhite 3s forwards'   
+        projectPara.style.animation='growvertical 3s forwards'   
     }
     else {
         // Add shrink and unwhite animation
         projectPara.style.animation='shrinkvertical 3s forwards'
-        projectInnerEl.style.animation='toopaque 3s forwards'  
+ 
         // Delay hiding element until it shrinks
         setTimeout(()=>{projectPara.classList.toggle('hidden')}, 3000 )
     }
