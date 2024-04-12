@@ -47,7 +47,7 @@ header {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-color: black;
-    background-size: cover;
+    background-size: 100vw;
     padding: 50px 50px 50px 0px;
 }
 
@@ -78,6 +78,17 @@ header {
     color: black;
     font-family: CopperplateL;
     border-bottom: double black 6px;
+}
+
+/***********************Expandable Elements****************/
+.expanded, .collapsed {
+    transition: max-height 1.5s ease-in;
+}
+.expanded {
+    max-height: 300px;
+}
+.collapsed {
+    max-height: 0px;
 }
 
 /***********************Quote Box Style *******************/
