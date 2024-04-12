@@ -27,14 +27,7 @@ a:hover {
     text-decoration: underline;
 }
 
-.background {
-    background-image: url("./images/earth.jpg ");
-
-    background-attachment: fixed;
-    background-position-y: 80px;
-    background-repeat: no-repeat;
-    background-color: black;
-}
+/********************* Header style ************************/
 
 header {
     background-color: black;
@@ -43,13 +36,27 @@ header {
     align-items: center;
 }
 
-.logo { height:150px}
+.logo { 
+    height:150px;
+}
 
-.project-outer {
+/****************** Hero Style ******************/
+
+.hero-bg {
+    position: relative;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: black;
+    background-size: cover;
     padding: 50px 50px 50px 0px;
 }
 
-.project-inner {
+.bg1 {
+    background-image: url("./images/earth.jpg ");
+    background-position-y: 120px;;
+}
+
+.hero-inner {
     background-color: rgba(255, 255, 255, 0.65);
     color: black;
     width: fit-content;
@@ -57,7 +64,7 @@ header {
     transition: height smooth 2s;
 }
 
-.project-inner p {
+.hero-inner p {
     color: black;
     margin: 0px;
     overflow: clip;
@@ -73,12 +80,16 @@ header {
     border-bottom: double black 6px;
 }
 
+/***********************Quote Box Style *******************/
+
 .quote-box {
     background-color: black;
     color: white;
     padding: 24px;
     text-align: center;
 }
+
+/*************************Carousel Style********************/
 
 .nebula-outer {
     background-image: url('./images/nebula.jpg');
@@ -207,6 +218,6 @@ li {
     }
 }
     
-.project-opp {
+.hero-opp {
     animation: towhite 2s forwards;
 }
