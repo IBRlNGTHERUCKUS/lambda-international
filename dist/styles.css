@@ -47,7 +47,7 @@ header {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-color: black;
-    background-size: cover;
+    background-size: 100vw;
     padding: 50px 50px 50px 0px;
 }
 
@@ -221,3 +221,13 @@ li {
 .hero-opp {
     animation: towhite 2s forwards;
 }
+
+.phase-image {
+    width: 100px;
+    height: 100px;
+    float: right;    
+}
+
+.phase-content {
+border: solid black 1px;
+ }
