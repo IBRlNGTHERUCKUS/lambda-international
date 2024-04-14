@@ -80,6 +80,17 @@ header {
     border-bottom: double black 6px;
 }
 
+/***********************Expandable Elements****************/
+.expanded, .collapsed {
+    transition: max-height 1.5s ease-in;
+}
+.expanded {
+    max-height: 300px;
+}
+.collapsed {
+    max-height: 0px;
+}
+
 /***********************Quote Box Style *******************/
 
 .quote-box {
