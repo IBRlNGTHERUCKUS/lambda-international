@@ -232,13 +232,14 @@ li {
 }
 
 .roadmap-container h2 {
-    border-bottom: 3px double gray;
+    
 }
 
 .phase-content {
-border: solid black 1px;
+border-bottom: 3px double gray;
 display: flex;
 flex-direction: row-reverse;
+
     }
      
 .phase-image {
