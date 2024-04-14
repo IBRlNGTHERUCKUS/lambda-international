@@ -225,8 +225,14 @@ li {
 /******************* Roadmap/Phases **************/
 
 .roadmap-container {
-    
+    padding: 32px;
+    background-color: black;
+    word-wrap: break-word;
+    color: white;
+}
 
+.roadmap-container h2 {
+    border-bottom: 3px double gray;
 }
 
 .phase-content {
@@ -239,4 +245,5 @@ flex-direction: row-reverse;
 width: 50%;
 object-fit: contain;
 float: left;
+margin-right: 16px;
 }
