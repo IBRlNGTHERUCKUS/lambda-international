@@ -232,3 +232,30 @@ li {
 .hero-opp {
     animation: towhite 2s forwards;
 }
+
+/******************* Roadmap/Phases **************/
+
+.roadmap-container {
+    padding: 32px;
+    background-color: black;
+    word-wrap: break-word;
+    color: white;
+}
+
+.roadmap-container h2 {
+    
+}
+
+.phase-content {
+border-bottom: 3px double gray;
+display: flex;
+flex-direction: row-reverse;
+
+    }
+     
+.phase-image {
+width: 50%;
+object-fit: contain;
+float: left;
+margin-right: 16px;
+}
