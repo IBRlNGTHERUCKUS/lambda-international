@@ -10,6 +10,10 @@ body {
     margin: 0;
     position: relative;
     font-family: CopperplateL;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
 }
 
 h1 {
@@ -244,10 +248,7 @@ li {
     background-color: black;
     word-wrap: break-word;
     color: white;
-}
-
-.roadmap-container h2 {
-    
+    max-width: 700px;
 }
 
 .phase-content {
@@ -255,16 +256,19 @@ border-bottom: 3px double gray;
 display: flex;
 flex-direction: row-reverse;
     }
+
 .icon-container {
     display: flex;
-    height: 100px
-    
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .phase-icon {
-    object-fit: contain;
-   flex: 1;
+    flex: 1;
+    object-fit: contain; 
+    height: 100px; 
 }
+
 .phase-image {
 width: 50%;
 object-fit: contain;
