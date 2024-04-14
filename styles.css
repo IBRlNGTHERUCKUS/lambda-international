@@ -183,6 +183,10 @@ footer {
     max-width: 380px;
 }
 
+ul {
+    padding-inline-start: 0px;
+}
+
 .icon {
     width: 50px;
 }
@@ -250,9 +254,17 @@ li {
 border-bottom: 3px double gray;
 display: flex;
 flex-direction: row-reverse;
-
     }
-     
+.icon-container {
+    display: flex;
+    height: 100px
+    
+}
+
+.phase-icon {
+    object-fit: contain;
+   flex: 1;
+}
 .phase-image {
 width: 50%;
 object-fit: contain;
