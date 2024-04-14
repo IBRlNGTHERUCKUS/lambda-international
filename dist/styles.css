@@ -222,12 +222,21 @@ li {
     animation: towhite 2s forwards;
 }
 
-.phase-image {
-    width: 100px;
-    height: 100px;
-    float: right;    
+/******************* Roadmap/Phases **************/
+
+.roadmap-container {
+    
+
 }
 
 .phase-content {
 border: solid black 1px;
- }
+display: flex;
+flex-direction: row-reverse;
+    }
+     
+.phase-image {
+width: 50%;
+object-fit: contain;
+float: left;
+}
