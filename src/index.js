@@ -47,4 +47,4 @@ const projectPara = heroBgEl.querySelector('p');
 heroBgEl.addEventListener('click', ()=>{handleExpandable(projectPara)})
 
 // Auto carousel scroll
-setInterval(domControl.handleCarouselNext, 5_000)
+setInterval(domControl.handleCarouselNext, 8_000)
