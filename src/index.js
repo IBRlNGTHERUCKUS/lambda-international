@@ -56,3 +56,11 @@ function handleExpandable(expandableEl) {
 const heroBgEl = document.querySelector('.hero-bg');
 const projectPara = heroBgEl.querySelector('p');
 heroBgEl.addEventListener('click', ()=>{handleExpandable(projectPara)})
+
+
+// Popup Menu
+const popupMenuBtn = document.querySelector('#popup-menu-btn');
+const popupMenuel = document.querySelector('.popup-menu')
+popupMenuBtn.addEventListener('click', ()=>{
+    popupMenuel.classList.toggle('hidden');
+})
