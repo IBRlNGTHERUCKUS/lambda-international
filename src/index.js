@@ -11,7 +11,11 @@ rightBtn.addEventListener('click', ()=>{carouselObj.next()})
 // Make bar buttons jump to respective slide
 const barEls = document.querySelectorAll('.bar');
 for (let i=0; i < barEls.length; i++) {
-    barEls[i].addEventListener('click', ()=>{carouselObj.jumpTo(i)})
+    barEls[i].addEventListener('click', ()=>{
+        carouselObj.jumpTo(i);
+        document.querySelector('.bar.active').classList.remove('active')
+        barEls[i].classList.add('active');
+    })
 }
 
 

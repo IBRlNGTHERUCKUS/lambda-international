@@ -156,11 +156,24 @@ header {
 .carousel-buttons {
     display: flex;
     justify-content: center;
+    align-items: end;
     gap: 4px;
     grid-column: 2/3;
+    width: 90%;
+    height: 60px;
 }
 .carousel-buttons * {
     flex: 1;
+    border-radius: 0px;
+    border:none;
+    height: 50%;
+    background-color: rgb(156, 156, 180);
+    transition: height 0.5s linear,
+        background-color 0.5s linear;
+}
+.carousel-buttons *.active {
+    height: 90%;
+    background-color: rgb(244, 215, 3);
 }
 
 .left-button {
@@ -204,42 +217,7 @@ li {
 }
 
 /************************ Animations ********************************/
-@keyframes towhite {
-    from {}
-    to {background-color: rgba(255, 255, 255, 0.9);}
-}
-@keyframes toopaque {
-    from {background-color: rgba(255, 255, 255, 0.9);}
-    to {background-color: rgba(255, 255, 255, 0.65);}
-} 
-@keyframes shrinkvertical {
-    from {
-        max-height: 1000px;
-    }
-    to {
-        max-height: 0px;
-    }
-}
-@keyframes growvertical {
-    from {
-        max-height: 0px;
-    }
-    to {
-        max-height: 1000px;
-    }
-}
-@keyframes shrinkvertical {
-    from {
-        max-height: 300px;
-    }
-    to {
-        max-height: 0px;
-    }
-}
-    
-.hero-opp {
-    animation: towhite 2s forwards;
-}
+
 
 /******************* Roadmap/Phases **************/
 
