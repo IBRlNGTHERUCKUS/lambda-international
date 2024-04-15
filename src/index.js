@@ -1,20 +1,38 @@
 import {Carousel} from "./carousel.js"
 
 const carouselEl = document.querySelector('.carousel');
-console.log(carouselEl);
 const carouselObj = new Carousel(carouselEl);
+
+// Make bar buttons jump to respective slide
+const domControl = {
+    updateBar() {
+        document.querySelector('.bar.active').classList.remove('active')
+        barEls[carouselObj.index].classList.add('active');
+    },
+    handleCarouselNext() {
+        carouselObj.next()
+        domControl.updateBar();
+    },
+    handleCarouselPrevious() {
+        carouselObj.previous()
+        domControl.updateBar();
+    },
+    handleCarouselJump(index) {
+        carouselObj.jumpTo(index);
+        domControl.updateBar();
+    }
+}
+
 
 const leftBtn = document.querySelector(".left-button");
 const rightBtn = document.querySelector(".right-button");
-leftBtn.addEventListener('click', ()=>{carouselObj.previous()});
-rightBtn.addEventListener('click', ()=>{carouselObj.next()})
-// Make bar buttons jump to respective slide
+leftBtn.addEventListener('click', domControl.handleCarouselPrevious);
+rightBtn.addEventListener('click', domControl.handleCarouselNext)
+
 const barEls = document.querySelectorAll('.bar');
 for (let i=0; i < barEls.length; i++) {
     barEls[i].addEventListener('click', ()=>{
-        carouselObj.jumpTo(i);
-        document.querySelector('.bar.active').classList.remove('active')
-        barEls[i].classList.add('active');
+        domControl.handleCarouselJump(i);
     })
 }
 
@@ -27,3 +45,6 @@ function handleExpandable(expandableEl) {
 const heroBgEl = document.querySelector('.hero-bg');
 const projectPara = heroBgEl.querySelector('p');
 heroBgEl.addEventListener('click', ()=>{handleExpandable(projectPara)})
+
+// Auto carousel scroll
+setInterval(domControl.handleCarouselNext, 5_000)
