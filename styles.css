@@ -226,8 +226,7 @@ li {
     from {
         opacity: 0;
     }
-    to {
-        
+    to { 
     }
 }
 
@@ -237,9 +236,8 @@ li {
 
 
 /******************* Roadmap/Phases **************/
-
 .roadmap-container {
-    padding: 32px;
+    padding: 18px 32px;
     background-color: black;
     word-wrap: break-word;
     color: white;
@@ -251,12 +249,15 @@ li {
     border-bottom: outset 2px white;
     border-radius: 4px;
 }
+.roadmap-container h2 {
+    margin: 8px 0px;
+}
 
 .phase-content {
-border-bottom: 3px double gray;
-display: flex;
-flex-direction: row-reverse;
-    }
+    border-bottom: 3px double gray;
+    display: flex;
+    flex-direction: row-reverse;
+}
 
 .icon-container {
     display: flex;
@@ -271,10 +272,10 @@ flex-direction: row-reverse;
 }
 
 .phase-image {
-width: 50%;
-object-fit: contain;
-float: left;
-margin: 0px 16px 0px 0px;
+    width: 50%;
+    object-fit: contain;
+    float: left;
+    margin: 0px 16px 0px 0px;
 }
 
 .phase-container:nth-of-type(2n-1) .phase-image {
