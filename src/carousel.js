@@ -26,6 +26,11 @@ class Carousel {
         
     }
     jumpTo(index) {
+        console.log(`Jumping to ${index}`)
+        if (index + 1 > this.slides.length) {
+            console.log(`${index} is out of range`)
+            return;
+        }
         this.index = index;
         this.carouselEl.scrollLeft = this.slides[this.index].offsetLeft;
     }
