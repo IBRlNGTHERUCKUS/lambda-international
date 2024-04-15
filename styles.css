@@ -260,4 +260,6 @@ float: left;
 margin-right: 16px;
 }
 
-.phase-image:n
+.phase-container:nth-of-type(2n-1) .phase-image {
+    float: right;
+}
