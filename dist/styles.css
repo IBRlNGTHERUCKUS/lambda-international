@@ -217,6 +217,18 @@ li {
 }
 
 /************************ Animations ********************************/
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        
+    }
+}
+
+.hero-inner, .icon-container {
+    animation: fadeIn 0.5s ease-in forwards;
+}
 
 
 /******************* Roadmap/Phases **************/
