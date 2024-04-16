@@ -265,14 +265,21 @@ li {
 .icon-container {
     display: flex;
     justify-content: center;
+    align-items: center;
     position: sticky;
     top: 0px;
     background: black;
+    height: 100px
+}
+
+.icon-container a {
+    flex: 1;
+
 }
 
 .phase-icon {
     object-fit: contain; 
-    height: 100px; 
+    width: 100%
 }
 
 .phase-image {
@@ -301,7 +308,7 @@ nav {
     flex-direction: column;
     background-color: black;
     z-index: 1;
-    padding: 0px 50px 10px 50px;
+    padding: 0px 50px 40px 50px;
 }
 
 .popup-menu a {
