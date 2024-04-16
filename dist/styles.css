@@ -6,6 +6,11 @@
     font-family: CopperplateL;
     src: url("./fonts/OPTICopperplate-Light.otf");
 }
+
+* {
+scroll-behavior: smooth;
+
+}
 body {
     margin: 0;
     position: relative;
@@ -242,6 +247,7 @@ li {
     word-wrap: break-word;
     color: white;
     max-width: 700px;
+    scroll-behavior: smooth;
 }
 
 .roadmap-container h1 {
@@ -258,12 +264,13 @@ li {
 
 .icon-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    position: sticky;
+    top: 0px;
+    background: black;
 }
 
 .phase-icon {
-    flex: 1;
     object-fit: contain; 
     height: 100px; 
 }
@@ -306,4 +313,12 @@ nav {
 
 .hidden {
     display: none;
+}
+
+/*Allows icon page jumps to be offset for sticky icons*/
+.anchor {
+    display: block;
+    position: relative;
+    visibility: hidden;
+    top: -100px ;
 }
